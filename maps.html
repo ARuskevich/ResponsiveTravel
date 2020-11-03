@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Add Map</title>
+    <title class="fas fa-bars">Add Map</title>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0mFpjtiZZEkJMB4w-8_O7rq_3J2qN6-I&callback=initMap&libraries=&v=weekly"
       defer
     ></script>
     <style type="text/css">
       /* Set the size of the div element that contains the map */
       #map {
         height: 400px;
+        
         /* The height is 400 pixels */
-        width: 100%;
+        width: 25%;
         /* The width is the width of the web page */
       }
     </style>
@@ -19,7 +20,7 @@
       // Initialize and add the map
       function initMap() {
         // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.036 };
+        const uluru = { lat: 48.858093, lng: 2.294694 };
         // The map, centered at Uluru
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 4,
@@ -34,7 +35,24 @@
     </script>
   </head>
   <body>
-    <h3>My Google Maps Demo</h3>
+    <header>
+
+
+      <h1>Paris Is The Place To Go!!!</h1>
+        <i class="fas fa-bars"></i>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home </a><li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="maps.html">Maps</a></li>
+            <li><a href="https://wireframe.cc/5Q5cwk" target="_blank">Wireframe</a></li>
+          </ul>
+        </nav>
+        <link rel="stylesheet" href="styles.css">
+     <img src="eiffel.jpg" alt="Eiffel Tower" width="1200" height="675">
+    </header>
+    <h4 class="place">Where we are.</h4>
     <!--The div element for the map -->
     <div id="map"></div>
   </body>
